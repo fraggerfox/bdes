@@ -27,9 +27,13 @@ The script installs things into the `/usr/local/` directory.
 Changes
 -------
 
-* Removed `des`directory and related Makefiles
-* No longer builds `libcrypto.a` but instead directly links with `-lcrypto`
+* Removed `des` directory and related Makefiles
+* No longer builds `libcrypto.a` but instead directly links with OpenSSL
+  libcrypto library using the `-lcrypto` flag
 * Changed the `CC` variable from `gcc` to `cc` to be more generic
+
+NOTE: Even though I mention the changes are for Cygwin, it may be able to
+compile in other environements too without issues.
 
 License
 -------
